@@ -137,14 +137,18 @@ ideas that we came up with, no sweat. Cringe away:
      \item \ldots $n$-tuple
      \item \ldots finite permutation
      \item \ldots 7-bit integer
+     \item \ldots coercion
      \item \ldots rule
      \item \ldots exception, except exceptions; those are normal
      \item \ldots arbitrary-precision rational number
-     \item \ldots priority queue, fibonacci heap, b-tree, pixel, regular expression, presheaf, commutative diagram, monad
+     \item \ldots priority queue, fibonacci heap, b-tree, pixel, regular expression, presheaf, commutative diagram, metaphor, monad
      \item \ldots MP3
+     \item \ldots SMS
      \item \ldots mutex
      \item \ldots non-uniform rational b-spline
    \end{enumerate}
+\item Instead of stack-based control-flow, use queue-based, tree-based, dataflow-network-based
+\item 4/3 CPS
 \item Every value is represented as the 256-bit content hash; elimination forms are distributed hashtable lookups; revision control is built into the concrete syntax of the language
 \item Unification always succeeds, forking the program with each of the two expressions to be unified substituted in that position; only if both fail does unification fail
 \item Realize every program you wish to write as actually the test case for a metaprogram that generates the program
@@ -156,6 +160,20 @@ ideas that we came up with, no sweat. Cringe away:
 \item Programs are realized as dashboards with knobs, buttons, and cable connections between them
 \item No matter what, the program keeps going, attempting to repair itself and keep trying actions that fail
 \item Programs are abstract geometric shapes
+\item Type has type \ldots
+  \begin{enumerate}
+    \item type
+    \item int
+    \item kind
+    \item type $\rightarrow$ type
+    \item object
+    \item null
+  \end{enumerate}
+\item To protect against the problem where sometimes someone called a function with an empty string, ``emptyable'' types, which include all values of the type except the ``empty'' one (\verb+""+, 0, NaN, 0.0, nil, \verb+{}+, false, etc.).
+\item To work around the global {\tt errno} problem, every value of a type includes the possibility of integers standing for an error code
+\item Lazy natural (co-)numbers, where the output of a numeric program is only a lower bound that may get higher as it continues computing
+\item A language where the compiler is integrated into the language as a feature, which takes first class source code to first class compiled binaries, within the language
+\item There's a global registry, in the world, and whenever a function returns, you check to see if any function in the world has registered a hook to process it
 \end{enumerate}
 
 You see how easy this is? If you are a programming language expert you
@@ -163,6 +181,39 @@ might even have thought of some langauges that already use these
 ideas. If so, {\it this is all the more reason to support our
   foundation}, because had we started earlier, we could have saved the
 world some trouble!
+
+It is worthwhile to try to acquire patents that are very broad, since
+these can be used to attack almost any language, even one with
+unanticipated bad ideas. For example:
+
+
+% XXX minipage?
+\subsection{Method and apparatus for attaching state to an object}
+
+This patent describes a method and apparatus for attaching state to
+objects in computer programs. The invention consists of a symbolic
+program running in computer memory and an object (which may be a value,
+hash table, list, function, binary data, array, vector, $n$-tuple,
+presheaf, source file, class, run-time exception, finite or infinite
+tape, or isomorphic representation). The claims are as follows:
+
+1.\quad A system for attaching state to the said object
+
+2.\quad The method of claim 1 where the state is binary data
+
+3.\quad The method of claim 1 where the state is an assertion about the behavior of the object
+
+4.\quad The method of claim 1 where the state is itself an object
+
+5.\quad The method of claim 4 where the state is the same object, or some property therein
+
+6.\quad The methods of claims 1--5 where the apparatus of attachment is reference \\
+6.a.\quad Reference by pointer \\
+6.b.\quad Reference by index \\
+6.c.\quad Reference by symbolic identifier \\
+6.c.\quad Representations isomorphic to those in claims 6.a.--6.c.
+
+
 
 \section{The /dev/urand Foundation}
 
