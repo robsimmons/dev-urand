@@ -7,6 +7,8 @@
 %\usepackage{amsthm}
 \usepackage{stmaryrd}
 
+\sloppypar
+
 \newcommand{\seq}[3]{{#1};{#2} \longrightarrow {#3} \mathstrut}
 
 \newcommand{\urfoc}[3]{{#1};{#2} \longrightarrow [{#3}] \mathstrut}
@@ -17,7 +19,7 @@
 \newcommand{\stableL}[1]{{#1}\,\mathit{stable_L} \mathstrut}
 \newcommand{\one}{{\bf 1}}
 
-\markboth{Robert J. Simmons, {\it et al.}}{A modest proposal for the purity of programming}
+\markboth{Simmons \& Murphy}{A modest proposal for the purity of programming}
 
 \title{A modest proposal for the purity of programming}
 \author{Robert J. Simmons \and Tom Murphy VII}
@@ -197,23 +199,50 @@ hash table, list, function, binary data, array, vector, $n$-tuple,
 presheaf, source file, class, run-time exception, finite or infinite
 tape, or isomorphic representation). The claims are as follows:
 
-1.\quad A system for attaching state to the said object
+1.\quad A system for attaching state to the said object \\
 
-2.\quad The method of claim 1 where the state is binary data
+2.\quad The method of claim 1 where the state is binary data \\
 
-3.\quad The method of claim 1 where the state is an assertion about the behavior of the object
+3.\quad The method of claim 1 where the state is an assertion about the behavior of the object \\
 
-4.\quad The method of claim 1 where the state is itself an object
+4.\quad The method of claim 1 where the state is itself an object \\
 
-5.\quad The method of claim 4 where the state is the same object, or some property therein
+5.\quad The method of claim 4 where the state is the same object, or some property therein \\
 
 6.\quad The methods of claims 1--5 where the apparatus of attachment is reference \\
 \qquad 6.a.\quad Reference by pointer \\
 \qquad 6.b.\quad Reference by index \\
 \qquad 6.c.\quad Reference by symbolic identifier \\
-\qquad 6.c.\quad Representations isomorphic to those in claims 6.a.--6.c.
+\qquad 6.c.\quad Representations isomorphic to those in claims 6.a.--6.c. \\
 
+7.\quad The methods of claims 1--5 where the apparatus of attachment is containment \\
 
+{\it (etc.)}
+
+\subsection{Method and apparatus for determining the control flow of programs}
+
+This patent describes a method and apparatus for determining the
+control flow in computer programs. The invention consists of a
+symbolic program running in computer memory, with a notion of {\it
+  current} and {\it next} state (which may be an instruction pointer,
+index, expression to evaluate, continuation, value, covalue, stack,
+queue, execution context, thread or thread pool, process image,
+cursor, tape head, phonograph stylus, or isomorphic
+representation). The claims are as follows:
+
+1.\quad A system for determining the next state from the previous state \\
+
+2.\quad The method of claim 1, where the determination includes the contents of the program's memory \\
+
+3.\quad The method of claim 1, where the determination includes the current state \\
+
+4.\quad The method of claim 1, where the determination includes external inputs \\
+
+5.\quad The method of claim 1, where the determination includes nondeterministic factors \\
+
+6.\quad The method of claim 1, where the determination is fixed ahead of time \\
+
+{\it (etc.)}
 
 \section{The /dev/urand Foundation}
 
