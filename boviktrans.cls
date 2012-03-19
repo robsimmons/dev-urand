@@ -119,7 +119,7 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{robtrans} [1996/07/03 ACM Transactions class based on <23 April 96>]
+\ProvidesClass{boviktrans} [1996/07/03 ACM Transactions class based on <23 April 96>]
 \RequirePackage{latexsym}
 %aiellom{
 \RequirePackage{url}
