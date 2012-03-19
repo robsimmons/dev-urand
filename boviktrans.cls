@@ -119,7 +119,7 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{robtrans} [1996/07/03 ACM Transactions class based on <23 April 96>]
+\ProvidesClass{boviktrans} [1996/07/03 ACM Transactions class based on <23 April 96>]
 \RequirePackage{latexsym}
 %aiellom{
 \RequirePackage{url}
@@ -1331,7 +1331,7 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 % (from apalike.sty)
 % No labels in the bibliography.
 %
-\def\@biblabel#1{}
+\def\@biblabel#1{[{#1}]~}
 
 % (from apalike.sty)
 % Set length of hanging indentation for bibliography entries.
@@ -1343,7 +1343,7 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 % from openbib.sty: \newblock is set to {}.
 
 \newdimen\bibindent
-\bibindent=1em
+\bibindent=0em
 \@ifundefined{refname}%
    {\@ifundefined{chapter}%
      {\newcommand{\refname}{\footnotesize REFERENCES}}%
