@@ -1148,9 +1148,9 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 
 \def\ps@myheadings{\let\@mkboth\@gobbletwo
 \def\@oddhead{\hbox{}\hfill \small\sf \rightmark\hskip
-19pt{\Large$\cdot$}\hskip 17pt\mypage}
+19pt{\Large$\cdot$}}
 \def\@oddfoot{\hbox{}\hfill\tiny\@runningfoot}
-\def\@evenhead{\small\sf\mypage \hskip 17pt{\Large$\cdot$}\hskip 19pt\leftmark\hfill \hbox{}}
+\def\@evenhead{\small\sf{\Large$\cdot$}\hskip 19pt\leftmark\hfill \hbox{}}
 \def\@evenfoot{\tiny\@runningfoot\hfill\hbox{}}
 \def\sectionmark##1{}\def\subsectionmark##1{}}
 \def\@runningfoot{}
